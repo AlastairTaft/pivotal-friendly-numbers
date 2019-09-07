@@ -26,6 +26,11 @@ const handleEvent = async (event) => {
     console.log('Operation performed by service account, ignoring.')
     return
   }
+
+  if (event['primary_resources'][0]['story_type'] == 'release'){
+    console.log('Ignoring because ticket type is \'release\'.')
+    return
+  }
   
 
   switch(event['kind']){
