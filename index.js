@@ -8,7 +8,7 @@ const main = async function(e) {
       .replace(new RegExp('\n', 'g'), '')
       .replace(new RegExp('\t', 'g'), ''),
   )
-  console.log('#args', JSON.stringify(event, null, 2))
+  console.log('#event', JSON.stringify(event, null, 2))
 
   await handleEvent(event)
 
@@ -19,6 +19,15 @@ const main = async function(e) {
 
 
 const handleEvent = async (event) => {
+
+  // If this event was triggered by our service account then don't react to 
+  // it, helps avoid getting stuck in update loops if there's any bugs
+  if (process.env.SERVICE_ACCOUNT_ID && event['performed_by']['id'] == process.env.SERVICE_ACCOUNT_ID){
+    console.log('Operation performed by service account, ignoring.')
+    return
+  }
+  
+
   switch(event['kind']){
     case 'story_create_activity':
     case 'story_update_activity':

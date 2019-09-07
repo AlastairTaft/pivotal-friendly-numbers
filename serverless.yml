@@ -10,6 +10,7 @@ provider:
     PGPASSWORD: ${env:PGPASSWORD}
     PGUSER: ${env:PGUSER}
     PGDATABASE: ${env:PGDATABASE}
+    SERVICE_ACCOUNT_ID: ${env:SERVICE_ACCOUNT_ID}
   
 functions:
   app:
