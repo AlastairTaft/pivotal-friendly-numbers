@@ -1,0 +1,28 @@
+service: pivotal-friendly-numbers
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  environment:
+    PIVOTAL_TOKEN: ${env:PIVOTAL_TOKEN}
+    PROJECT_ID: ${env:PROJECT_ID}
+    PGHOST: ${env:PGHOST}
+    PGPASSWORD: ${env:PGPASSWORD}
+    PGUSER: ${env:PGUSER}
+    PGDATABASE: ${env:PGDATABASE}
+  
+functions:
+  app:
+    handler: index.main
+    events:
+      - http:
+          path: /
+          method: POST
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: POST
+          cors: true
+
+plugins:
+  - serverless-offline
