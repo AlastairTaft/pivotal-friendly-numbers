@@ -9,14 +9,11 @@ const main = async function(e) {
       .replace(new RegExp('\t', 'g'), ''),
   )
   console.log('#event', JSON.stringify(event, null, 2))
-
   await handleEvent(event)
-
   return {
     statusCode: 204,
   }
 }
-
 
 const handleEvent = async (event) => {
 
@@ -32,7 +29,6 @@ const handleEvent = async (event) => {
     return
   }
   
-
   switch(event['kind']){
     case 'story_create_activity':
     case 'story_update_activity':
@@ -49,33 +45,3 @@ const handleEvent = async (event) => {
 module.exports = { 
   main,
 }
-
-
-/*
-{ 
-  kind: 'story_create_activity',
-  guid: '2396790_2',
-  project_version: 2,
-  message: 'Alastair Taft added this feature',
-  highlight: 'added',
-  changes:
-  [ { kind: 'story',
-  change_type: 'create',
-  id: 168358550,
-  new_values: [Object],
-  name: 'This is a test story.',
-  story_type: 'feature' } ],
-  primary_resources:
-  [ { kind: 'story',
-  id: 168358550,va
-  name: 'This is a test story.',
-  story_type: 'feature',
-  url: 'https://www.pivotaltracker.com/story/show/168358550' } ],
-  secondary_resources: [],
-  project: { kind: 'project', id: 2396790, name: 'Test Project' },
-  performed_by:
-  { kind: 'person',
-  id: 3281383,
-  name: 'Alastair Taft',
-  initials: 'AT' },
-  occurred_at: 1567848015000 }*/
