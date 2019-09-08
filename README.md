@@ -15,26 +15,26 @@ npm install
 
 ### Grab your pivotal token here
 
-<img align="left" height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/2R2h0q2c2d3f3F1R3f3Z/Image%202019-09-08%20at%206.22.38%20pm.png">
+<img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/2R2h0q2c2d3f3F1R3f3Z/Image%202019-09-08%20at%206.22.38%20pm.png">
 
-<img align="left" height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/0D0K1R470G0E091k0C2n/Image%202019-09-08%20at%206.23.50%20pm.png">
+<img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/0D0K1R470G0E091k0C2n/Image%202019-09-08%20at%206.23.50%20pm.png">
 
 ---
 
 ### Grab your project id here
 
-<img align="left" height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/273T0Z2d3v1233362S2V/Screen%20Recording%202019-09-08%20at%2006.26%20pm.gif">
+<img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/273T0Z2d3v1233362S2V/Screen%20Recording%202019-09-08%20at%2006.26%20pm.gif">
 
 ---
 
 ### Grab your service account id here
 You can use either your own account but it's recommend to setup a "bot" user.
 
-<img align="left" height="100" src="https://d2y84jyh761mlc.cloudfront.net/items/2N1L1T22040x3e302V0i/Image%202019-09-08%20at%206.32.11%20pm.png">
+<img height="100" src="https://d2y84jyh761mlc.cloudfront.net/items/2N1L1T22040x3e302V0i/Image%202019-09-08%20at%206.32.11%20pm.png">
 
 Then bring up dev tools to find the account id.
 
-<img align="left" height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/3u3U1I1v0y0X1R1T1m0t/Image%202019-09-08%20at%206.43.10%20pm.png">
+<img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/3u3U1I1v0y0X1R1T1m0t/Image%202019-09-08%20at%206.43.10%20pm.png">
 
 ---
 
