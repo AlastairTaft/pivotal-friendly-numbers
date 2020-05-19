@@ -3,6 +3,7 @@ service: pivotal-friendly-numbers
 provider:
   name: aws
   runtime: nodejs10.x
+  stage: ${opt:stage}
   environment:
     PIVOTAL_TOKEN: ${env:PIVOTAL_TOKEN}
     PROJECT_ID: ${env:PROJECT_ID}
@@ -11,6 +12,7 @@ provider:
     PGUSER: ${env:PGUSER}
     PGDATABASE: ${env:PGDATABASE}
     SERVICE_ACCOUNT_ID: ${env:SERVICE_ACCOUNT_ID}
+    TICKET_PREFIX: ${env:TICKET_PREFIX}
   
 functions:
   app:
