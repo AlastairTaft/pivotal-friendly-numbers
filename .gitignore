@@ -4,3 +4,4 @@ deploy-budget-app.bash
 start.bash
 scripts
 .serverless
+secrets.txt

@@ -15,6 +15,8 @@ npm install
 
 ### Grab your pivotal token here
 
+NOTE: Ensure you are using a bot account, as if you use your main account it won't update the tickets when you edit them.
+
 <img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/2R2h0q2c2d3f3F1R3f3Z/Image%202019-09-08%20at%206.22.38%20pm.png">
 
 <img height="360" src="https://d2y84jyh761mlc.cloudfront.net/items/0D0K1R470G0E091k0C2n/Image%202019-09-08%20at%206.23.50%20pm.png">
